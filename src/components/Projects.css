@@ -1,6 +1,6 @@
 .projects {
   padding: 5rem 2rem;
-  background-color: var(--bg-light);
+  background-color: #dbeafe;
 }
 
 .projects-container {
@@ -13,12 +13,12 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 0.5rem;
-  color: var(--text-dark);
+  color: white;
 }
 
 .section-subtitle {
   text-align: center;
-  color: var(--text-light);
+  color: #1e40af;
   font-size: 1.125rem;
   margin-bottom: 3rem;
 }
