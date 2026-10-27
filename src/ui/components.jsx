@@ -36,6 +36,8 @@ export function useReveal() {
     const el = ref.current
     if (!el || !('IntersectionObserver' in window)) return
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    // Already scrolled past (e.g. the page opened mid-way or jumped to an anchor): show it, don't hide it.
+    if (el.getBoundingClientRect().bottom < 0) return
     el.classList.add('ui-reveal')
     const io = new IntersectionObserver(([e]) => {
       if (e.isIntersecting) { el.classList.add('is-in'); io.disconnect() }

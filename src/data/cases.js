@@ -23,8 +23,8 @@ export const cases = [
     slug: 'peelaboo',
     title: 'Peelaboo: a DTC cosmetics brand on Shopify',
     summary: 'Brand, storefront and product experience for a direct-to-consumer cosmetics line.',
-    tags: ['Brand', 'E-commerce', 'Shopify'],
-    image: { src: img('peelaboo.jpg'), alt: 'Peelaboo storefront home page' },
+    tags: ['Research', 'Brand', 'Operations'],
+    image: { src: img('peelaboo-personas.jpg'), alt: 'Two Peelaboo customer personas, Sarah and Kim' },
   },
 ]
 
