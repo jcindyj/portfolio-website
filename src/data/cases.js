@@ -21,8 +21,8 @@ export const cases = [
   },
   {
     slug: 'peelaboo',
-    title: 'Peelaboo: a DTC cosmetics brand on Shopify',
-    summary: 'Brand, storefront and product experience for a direct-to-consumer cosmetics line.',
+    title: 'Peelaboo: from customer research to running a cosmetics brand',
+    summary: 'Customer research, brand, sourcing, pricing, and day-to-day operations for my own direct-to-consumer nail care line.',
     tags: ['Research', 'Brand', 'Operations'],
     image: { src: img('peelaboo-personas.jpg'), alt: 'Two Peelaboo customer personas, Sarah and Kim' },
   },
