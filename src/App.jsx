@@ -1,22 +1,31 @@
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Work from './components/Work'
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import './App.css'
+import { NavBar, Footer } from './ui/components.jsx'
+import Hero from './sections/Hero'
+import Work from './sections/Work'
+import About from './sections/About'
+import Contact from './sections/Contact'
+import profile from './data/profile'
+import './page.css'
+
+// Shown only when its copy is written.
+const SHOW_ABOUT = false
+
+const links = [
+  { href: '#work', label: 'Work' },
+  ...(SHOW_ABOUT ? [{ href: '#about', label: 'About' }] : []),
+  { href: '#contact', label: 'Contact' },
+]
 
 export default function App() {
   return (
     <>
-      <Header />
-      <main>
+      <NavBar sticky wordmark brand="JCINDYJ" brandLabel={`${profile.name}, home`} brandHref="#top" links={links} />
+      <main className="ui-container" id="top">
         <Hero />
         <Work />
-        <About />
+        {SHOW_ABOUT && <About />}
         <Contact />
       </main>
-      <Footer />
+      <Footer>© {new Date().getFullYear()} {profile.name}</Footer>
     </>
   )
 }

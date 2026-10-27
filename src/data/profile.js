@@ -5,9 +5,12 @@ export const profile = {
   name: 'Cindy Jung',
   role: 'UX/UI Designer',
   location: 'New York',
+  // Headline B, picked by Cindy 2026-10-27.
+  headline: 'I design consumer products and prototype them with AI agents.',
   bio:
     'UX/UI Designer with a deep specialty in display — internal and external — and broader work across concept design, camera and video-control features, and peripherals (mice, keyboards, webcams). From shipping a solo-owned consumer app to leading concept-to-prototype design work across hardware and software.',
   email: 'jcjung.design@gmail.com',
+  // The Contact row shows LinkedIn only when this is set.
   linkedin: 'https://www.linkedin.com/in/jcindyj',
 }
 

@@ -1,0 +1,64 @@
+/* Design tokens v3.1 (lighter: translucent surfaces + two gradients) — JCINDYJ brand on dark. Dark only.
+   Brand source: Cindy's 2023 JCINDYJ logo (#1e6186, Josefin Sans Bold) + 2020 theme (#67A9CE, warm gray #655C5A).
+   Contrast numbers are measured live on the library page. */
+:root {
+  color-scheme: dark;
+
+  /* Surfaces — warm black (from the brand's warm gray), no shadows */
+  --bg: #131211;
+  --surface: rgba(255, 255, 255, 0.05);        /* translucent so the page breathes */
+  --surface-hover: rgba(255, 255, 255, 0.08);
+  --line: #2c2826;              /* decorative dividers only */
+
+  /* Text — warm neutrals */
+  --text: #ece8e4;
+  --text-2: #a59e99;
+  --text-3: #938c87;
+
+  /* Brand */
+  --brand: #1e6186;             /* JCINDYJ deep blue — used as a fill, never as text on dark */
+  --brand-text: #f4f1ee;        /* title on brand fill */
+  --brand-text-2: #c9dbe6;      /* body on brand fill */
+  --accent: #67a9ce;            /* JCINDYJ light blue = "you can click this" */
+  --accent-hover: #8cc0de;
+
+  /* Gradients — only two places: the page top and the featured case */
+  --glow-top: radial-gradient(70rem 40rem at 85% -8rem, rgba(103, 169, 206, 0.22), transparent 70%);  /* peak sits away from the text column */
+  --brand-gradient: linear-gradient(90deg, #1e6186 40%, #3384b0 100%);       /* text sits on the dark end */
+  --brand-gradient-stacked: linear-gradient(180deg, #3384b0 0%, #1e6186 52%); /* phone: image on top */
+
+  /* Tags — small, filled, brand blue family */
+  --tag-bg: rgba(103, 169, 206, 0.16);         /* light blue, 16% */
+  --tag-text: #b9d6e8;
+  --tag-bg-on-brand: rgba(0, 0, 0, 0.22);
+  --tag-text-on-brand: #e6eff5;
+
+  /* Type */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-brand: "Josefin Sans", var(--font-sans);   /* name and wordmark only */
+  --brand-size: clamp(1.5rem, 3.2vw, 2rem);
+  --display-size: clamp(2.25rem, 6vw, 4rem);
+  --title-size: 1.25rem;
+  --body-size: 1.0625rem;
+  --meta-size: 0.875rem;
+
+  /* Motion — slow, brightness only */
+  --reveal-duration: 1.2s;
+
+  /* Space: 4px base */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 40px;
+  --space-7: 64px;
+  --space-8: 96px;
+
+  /* Layout */
+  --gutter: 16px;
+  --content-max: 1040px;
+  --text-max: 40rem;
+  --radius: 12px;
+  --radius-sm: 6px;
+}
