@@ -245,7 +245,7 @@ export default function LibraryPage() {
             </Specimen>
           </Section>
 
-          <Section id="card-standard" title="Case card, standard" note="Two across on desktop, one on mobile. The image is optional; a case without a usable image shows text only.">
+          <Section id="card-standard" title="Case card, standard" note="Two across on desktop, one on mobile. The image is optional; a case without a usable image shows text only. A case that can only be shared privately ends with one request link.">
             <Specimen bare>
               <div className="ui-grid-2">
                 {standard.map((c) => <CaseCard key={c.slug} {...c} headingLevel={4} />)}

@@ -18,6 +18,11 @@ export const cases = [
     title: 'Refreshing a live consumer display app, Windows and Mac',
     summary: 'A cross-platform (Windows + Mac) refresh of a shipped settings app.',
     tags: ['Consumer app', 'Windows', 'Mac'],
+    // Public site shows the summary only; the full case is shared privately on request (2026-10-27).
+    request: {
+      label: 'Request the full case study',
+      href: 'mailto:jcjung.design@gmail.com?subject=Case%20study%20request',
+    },
   },
   {
     slug: 'peelaboo',

@@ -49,7 +49,8 @@ export function useReveal() {
 }
 
 // variant: 'featured' | 'standard'. Not a link until case pages exist. `image` = { src, alt } (optional).
-export function CaseCard({ title, summary, tags = [], image, variant = 'standard', headingLevel = 3, reveal = true }) {
+// `request` = { label, href }: one link at the bottom of the card, e.g. to ask for a private case study.
+export function CaseCard({ title, summary, tags = [], image, request, variant = 'standard', headingLevel = 3, reveal = true }) {
   const H = `h${headingLevel}`
   const ref = useReveal()
   return (
@@ -63,6 +64,7 @@ export function CaseCard({ title, summary, tags = [], image, variant = 'standard
         <H className="t-title">{title}</H>
         <p className="t-body">{summary}</p>
         {tags.length > 0 && <div className="ui-card__tags"><Tags items={tags} /></div>}
+        {request && <p className="ui-card__request"><Link href={request.href}>{request.label}</Link></p>}
       </div>
     </article>
   )
