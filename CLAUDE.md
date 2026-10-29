@@ -4,7 +4,7 @@ Cindy Jung's portfolio site. React 18 + Vite 5, deployed to GitHub Pages at http
 
 ## Talking to Cindy
 - Always reply in Korean, even when the brief, code, or tool output is in English. Code, file names, commits, and PR text stay in English.
-- She has no coding background: plain language first, explain jargon before using it.
+- Plain language first; explain jargon before using it.
 
 ## Hard rules
 - NDA: no company names, product codenames, teammate names, or real work screens anywhere in this repo. This repo is public. Never invent new site copy; use only text Cindy provides.
